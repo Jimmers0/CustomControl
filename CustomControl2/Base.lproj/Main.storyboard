@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomControl2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metal.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RLx-QI-PXY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lb5-p9-SVb" customClass="customButton" customModule="CustomControl2" customModuleProvider="target">
+                                <rect key="frame" x="89" y="246" width="196" height="174"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="769-Dq-b6S"/>
+                                    <constraint firstAttribute="width" constant="196" id="YOg-G0-q5j"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="viewColor">
+                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="viewBorderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="viewBorderWidth">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="87"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GRH-a4-A2b" appends="YES" id="u2L-hx-gyT"/>
+                                    <outletCollection property="gestureRecognizers" destination="c7s-xj-DaO" appends="YES" id="oWK-Vh-347"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do Not Press Yellow Button!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kod-VS-jtO">
+                                <rect key="frame" x="46" y="53" width="282" height="95.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hold Button To Reset!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wg8-Qg-h2i">
+                                <rect key="frame" x="65" y="498.5" width="245" height="95.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RLx-QI-PXY" secondAttribute="bottom" id="3k5-FL-nzF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RLx-QI-PXY" secondAttribute="trailing" id="6HY-Y5-ZzG"/>
+                            <constraint firstItem="RLx-QI-PXY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Ca-2I-84o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wg8-Qg-h2i" secondAttribute="bottom" constant="73" id="QBR-a4-J2S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kod-VS-jtO" secondAttribute="trailing" constant="47" id="S4W-TJ-tzN"/>
+                            <constraint firstItem="RLx-QI-PXY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YaC-CZ-AwC"/>
+                            <constraint firstItem="Lb5-p9-SVb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZVN-4M-OhA"/>
+                            <constraint firstItem="Wg8-Qg-h2i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="aoZ-Mo-2JJ"/>
+                            <constraint firstItem="Kod-VS-jtO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="hhk-qD-Ck6"/>
+                            <constraint firstItem="Kod-VS-jtO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="hyN-PT-jUO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wg8-Qg-h2i" secondAttribute="trailing" constant="65" id="leN-Yz-cVK"/>
+                            <constraint firstItem="Lb5-p9-SVb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tcL-V0-GJz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLabelText" destination="Wg8-Qg-h2i" id="JOS-PF-pV4"/>
+                        <outlet property="button" destination="Lb5-p9-SVb" id="Jel-kc-6of"/>
+                        <outlet property="imgView" destination="RLx-QI-PXY" id="V2W-YW-FcQ"/>
+                        <outlet property="labelText" destination="Kod-VS-jtO" id="5jS-rd-7jd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GRH-a4-A2b">
+                    <connections>
+                        <action selector="launchButton:" destination="BYZ-38-t0r" id="RGy-Wu-HK2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="c7s-xj-DaO">
+                    <connections>
+                        <action selector="resetApp:" destination="BYZ-38-t0r" id="6rH-bd-Eqq"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="metal.jpg" width="1024" height="576"/>
+    </resources>
+</document>
